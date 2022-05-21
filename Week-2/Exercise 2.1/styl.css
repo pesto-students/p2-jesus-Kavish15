@@ -1,0 +1,306 @@
+
+body{
+    margin: 0px;
+}
+
+.wrapper{
+    padding: 0px;
+    margin: 0px;
+}
+
+.top-section{
+    position: relative;
+}
+
+.nav-bar{
+    /* border: 2px solid orange; */
+    height: auto;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    }
+.nav-bar img {
+    position: absolute;
+    margin: 15px 50px;
+}
+
+.nav-bar ul{
+    display: flex;
+    justify-content:flex-end;
+    width: auto;
+    margin-right: 100px;
+    margin-top: 25px;
+}
+
+.nav-bar li{
+    font-family: 'Gruppo', cursive;
+    list-style: none;
+    color: white;
+    margin: auto 30px;
+    font-size: 20px;
+    transition: color 0.8s;
+    cursor:default;
+}
+
+.nav-bar li:hover{
+    color: #f89a38;
+    font-weight:bold;
+    font-size: 22px;    
+}
+
+.bike-img{
+    object-fit: cover;
+    height: 580px;
+    width: 100%;
+    opacity: 1;
+}
+
+.top-section h1{
+    position: absolute;
+    font-family: 'Bebas Neue', cursive;
+    top: 242px;
+    left: 55px;
+    letter-spacing: 5px;
+    font-size: 100px;
+    color: white;
+    text-shadow: 4px 1px black;
+}
+
+.sup { 
+    vertical-align: text-top; 
+    font-size: 25px;
+    text-shadow: none;
+    color: black;
+    
+}
+
+.B-cls{
+    color: #f89a38;
+    font-size: 150px;
+}
+
+.top-section h3{
+    position: absolute;
+    font-family: 'Square Peg', cursive;
+    top: 432px;
+    left: 335px;
+    font-size: 30px;
+    color: #d3884d;
+}
+
+
+.artcl{
+    margin-top: 0px;
+    text-align: center;
+    /* background-color: #ebe8e1; */
+    
+}
+
+.h-common{
+    font-size: 50px;
+    margin-top: 20px;
+    font-family: 'Caveat', cursive; 
+    color: #ff7200;  
+}
+
+.p-common{
+    font-size: 20px;
+    font-family: 'Signika Negative', sans-serif;
+    width: 700px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.gir-div .h-common{
+    width: 500px;
+    margin-top: 110px;
+    margin-left: 50px;
+}
+
+.gir-div .p-common{
+    margin: 0;
+    width: auto;
+    color: white;
+}
+
+.artcl button{
+    border: none;
+    background-color: #f89a38;
+    color:black;
+    font-size: 40px;
+    padding: 0px;
+    font-family:'Square Peg', cursive;
+    width: 150px;
+    border-radius: 4px;
+    font-weight: bolder;
+    transition: background-color 1s;
+    margin-bottom: 20px;
+}
+
+.artcl button:hover{
+background-color: rgb(225, 186, 112);
+}
+
+.gir{
+    margin-top: 20px;
+    display: grid;
+    background-color: black;
+    grid-template-areas: 
+    "io df it"
+    "ith df if";
+    grid-gap: 20px;
+    text-align: center;
+    
+}
+
+.gir .one{
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.img-one{
+    grid-area:io;
+}
+
+.img-two{
+    grid-area: it;
+}
+
+.img-three{
+    grid-area: ith;
+}
+
+.img-four{
+    grid-area: if;
+}
+
+#div-five{
+    grid-area:df;
+}
+
+
+
+.gir-one{
+    display: flex;
+    width:100%;
+    
+}
+.img-gir-one{
+    height: 70px;
+    width: 70px;
+    
+}
+
+.kav{
+    text-align: center;
+    border: 2px solid black;
+    padding: 20px;
+}
+
+.kav:hover{
+    background-color:#eccf94 ;
+    }
+
+.kav h2{
+    font-family: 'Caveat', cursive; 
+    color: #ff7200;  
+}
+
+.kav p{
+    font-family: 'Signika Negative', sans-serif;
+}
+
+
+
+.forms{
+    text-align: center;
+    
+    background-color: black;
+    
+}
+
+.fom{
+    margin: 5px;
+    padding: 10px;
+    width: 200px;
+    border-radius: 5px;
+    
+    
+}
+
+input[type=button]
+{
+    color: black;
+    border: 0;
+    background-color: #ff7200;  
+    margin-bottom: 30px;
+    font-size: 15px;
+    width:100px ;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+.forms .h-common{
+    margin-top: 0px;
+    padding-top: 40px;
+}
+
+form label{
+    color: white;
+    font-family:'Signika Negative', sans-serif;
+}
+
+input[type=checkbox]{
+    margin: 15px auto;
+}
+
+.but:hover{
+    background-color: rgb(225, 186, 112);
+}
+
+
+
+
+.foot{
+    text-align: center;
+    background-color:#e1b45b;
+    
+    
+}
+
+.foot h2{
+    font-family:'Signika Negative', sans-serif;
+    font-size: small;
+    padding-top: 20px;
+    margin: 0px;
+}
+
+
+.img-foot-one{
+    
+    height: 30px;
+    width: 30px;
+    margin-top: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display:inline-block;
+}
+
+.hov-one:hover{
+    content: url("Image/facebook.png");
+}
+
+.hov-two:hover{
+    content: url("Image/youtube\ \(1\).png");
+}
+
+.hov-three:hover{
+    content: url("Image/twitter-1.png");
+
+}
+
+
