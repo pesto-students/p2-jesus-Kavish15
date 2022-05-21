@@ -3,15 +3,15 @@
   width: 200px;
   margin-left: 500px;
   margin-top: 200px;
-  background-color: white;
+  
   position: relative;
-
 }
 
 .outer-box h2{
     font-size: 40px;
     text-align: center;
-    
+    padding-top: 75px;
+    font-family: cursive;
 }
 
 .box {
@@ -21,8 +21,8 @@
 }
 
 .top-left {
-  top: 100px;
-  left:100px;
+  top: 0px;
+  left: 0px;
   background-color: red;
   transition-property: transform;
   transition-duration: 2s;
@@ -47,8 +47,8 @@
 
 
 .top-right {
-  top: 100px;
-  left: 200px;
+  top: 0px;
+  left: 100px;
   background-color: yellow;
   transition-property: transform;
   transition-duration: 2s;
@@ -56,8 +56,8 @@
 }
 
 .bottom-left {
-  top: 200px;
-  left: 100px;
+  top: 100px;
+  left: 0px;
   background-color: blue;
   transition-property: transform;
   transition-duration: 2s;
@@ -65,8 +65,8 @@
 }
 
 .bottom-right {
-  top: 200px;
-  left: 200px;
+  top: 100px;
+  left: 100px;
   background-color: green;
   transition-property: transform;
   transition-duration: 2s;
