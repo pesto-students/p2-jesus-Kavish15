@@ -111,29 +111,30 @@
 
       <div class="forms">
         <h1 class="h-common">Enquire Form</h1>
-        <form>
+        <form action="#" method="get">
           <input required type="text" placeholder="Name" class="fom" /><br />
           <input
             required
             type="email"
-            pattern=
-            "[^ @]*@[^ @]*"
             placeholder="Email Id"
+            pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}"
             class="fom"
           /><br />
           <input
             required
-            type="text"
+            type="tel"
             placeholder="Mobile No"
+            pattern="[6-9]{1}[0-9]{9}"
             class="fom"
           /><br />
 
-          <input required type="text" placeholder="Address" class="fom" /><br />
+          <input  required type="text" placeholder="Address" class="fom" /><br />
 
           <label>I Agree All Term and Condition </label
-          ><input required type="checkbox" />
+          ><input  required type="checkbox" />
           <br />
-          <input type="button" value="Submit" class="fom but" />
+          <!-- <input type="button" value="Submit" class="fom but" /> -->
+          <button class="fom but">Submit</button>
         </form>
       </div>
 

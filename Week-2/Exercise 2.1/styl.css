@@ -219,8 +219,7 @@ background-color: rgb(225, 186, 112);
 
 .forms{
     text-align: center;
-    
-    background-color: black;
+ background-color: black;
     
 }
 
@@ -228,12 +227,10 @@ background-color: rgb(225, 186, 112);
     margin: 5px;
     padding: 10px;
     width: 200px;
-    border-radius: 5px;
-    
-    
+    border-radius: 5px;   
 }
 
-input[type=button]
+button
 {
     color: black;
     border: 0;

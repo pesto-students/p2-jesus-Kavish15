@@ -29,19 +29,19 @@
   transform-origin: top left;
 }
 
-.top-left:hover {
+.in-box:hover .top-left {
   transform: rotate(90deg);
 } 
 
-.top-right:hover {
+.in-box:hover .top-right {
   transform: rotate(-90deg);
 }
 
-.bottom-left:hover {
+.in-box:hover .bottom-left {
   transform: rotate(-90deg);
 }
 
-.bottom-right:hover {
+.in-box:hover .bottom-right{
   transform: rotate(90deg);
 }
 
