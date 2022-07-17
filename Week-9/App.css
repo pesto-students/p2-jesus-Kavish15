@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Ubuntu", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.main-div {
+  min-height: 100vh;
+  background: linear-gradient(100deg, #b79595, #82b4c2);
+  display: flex;
+  justify-content: center;
+}
+
+.child-div {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.title {
+  font-family: "Kaushan Script", cursive;
+  font-size: 90px;
+  margin-bottom: 40px;
+  color: rgb(5 4 19);
+}
+
+.title span {
+  font-family: "Kaushan Script", cursive;
+  font-size: 90px;
+  color: #360202;
+}
+
+input {
+  font-family: "Ubuntu", sans-serif;
+  /* display: block; */
+  min-width: 40rem;
+  height: 3.4rem;
+  padding: 2rem 1.2rem;
+  font-size: 1.8rem;
+  line-height: 1.42857143;
+  margin-top: 2rem;
+  color: rgb(0, 0, 0);
+  background-color: #6a777e;
+  background-image: none;
+  border: 0.1rem solid rgb(17, 26, 14);
+  border-radius: 0.4rem;
+}
+
+::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: rgba(255, 255, 255, 0.537);
+}
+
+input:focus,
+input:active,
+input:active:focus {
+  border: none;
+  padding: 2.3rem 1.5rem;
+  outline: none;
+}
+
+.todo-btn {
+  width: 5rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.fa {
+  margin-left: -2.5rem;
+  cursor: pointer;
+  pointer-events: auto;
+  z-index: 10;
+  background-color: #6a777e;
+  color: rgb(22, 21, 21);
+  transition: color 0.15s linear;
+  font-size: 3rem;
+}
+
+.fa:hover {
+  color: rgb(165, 230, 14);
+}
+
+.fa-plus:before {
+  content: "\f067";
+  font-size: 2rem;
+
+}
+.showItems {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.eachItem {
+  padding: 1.2rem 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 0.7rem;
+  margin-left: 1rem;
+  min-width: 40rem;
+  word-break: break-word;
+  background: #360202a6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.4s linear;
+}
+
+.eachItem:hover {
+  background: rgb(166, 119, 97);
+  
+}
+
+.showItems .eachItem h3 {
+  padding-left: 1rem;
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.fa-trash {
+  
+  cursor: pointer;
+  pointer-events: auto;
+  z-index: 10;
+  color: rgb(245, 239, 239);
+  background-color: #360202a6;
+  transition: color 0.15s linear;
+  font-size: 2rem;
+}
+
+.fa-trash:before {
+  content: "\f1f8";
+  background-color: #583c3f;
+  transition: background-color 0.4s linear;
+}
+
+.eachItem:hover .fa-trash::before {
+  color: #750606fa;
+  background-color: rgb(166, 119, 97);
+}
+
+.eachItem:hover h3 {
+  color: rgb(12, 12, 12);
+}
+
+.btn {
+  font-family: "Patrick Hand", cursive;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 45px;
+  max-width: 160px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+}
+.btn:hover {
+  text-decoration: none;
+}
+
+.effect04 {
+  --uismLinkDisplay: var(--smLinkDisplay, inline-flex);
+  display: var(--uismLinkDisplay);
+  color: #000;
+  border: solid 1px #000;
+  background-color: #e0d5d7;
+  position: relative;
+  border-radius: 5px;
+  transition-duration: 0.4s;
+  overflow: hidden;
+}
+
+.effect04::before,
+.effect04 span {
+  margin: 0 auto;
+  transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  transition-duration: 0.4s;
+}
+
+.effect04:hover {
+  background-color: #bd0707af;
+}
+
+.effect04:hover span {
+  -webkit-transform: translateY(-400%) scale(-0.1, 20);
+  transform: translateY(-400%) scale(-0.1, 20);
+}
+
+.effect04::before {
+  content: attr(data-sm-link-text);
+  color: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  -webkit-transform: translateY(500%) scale(-0.1, 20);
+  transform: translateY(500%) scale(-0.1, 20);
+}
+
+.effect04:hover::before {
+  letter-spacing: 0.05em;
+  -webkit-transform: translateY(0) scale(1, 1);
+  transform: translateY(0) scale(1, 1);
+}
